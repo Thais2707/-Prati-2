@@ -23,4 +23,4 @@ console.log ("Hello Word")
 
 // git tag -d "nome da tag"
 
-console.log ("A hais este commit.")
+console.log ("A Thais este commit.")

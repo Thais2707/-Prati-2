@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt br">
+    <head>
+
+        <title>Primeiro Projeto</title>
+
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="Web Development, HTML, CSS, Javascript">
+        <meta name="author" content="Perna Longa">
+        <meta name="description" content="Este site trata de conteúdos introdutórios do desenvolvimento Web.">
+    
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        
+        header {
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+        }
+        
+        h1, h2 {
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a{
+            color: #7c4dff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            color: orangered;
+        }
+
+        table {
+                border: 2px solid #7c4dff;
+                width: 100%;
+                text-align: center;
+            }
+
+            th,td {
+                border: 1px solid #ff7043;
+                padding: 10px;
+            }
+
+            form{
+                padding: 20px;
+                border-radius: 5px;
+                display: inline-block;
+                text-align: left;
+            }
+
+            form input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+    </head>
+
+<body>
+
+   <header>
+    <h1 style="color: #333333">NERDS ANÔNIMOS</h1>
+    <p>
+        O lar secreto dos nerds
+    </p>
+
+    <hr>
+   </header>
+
+   <nav>
+    <a href="#comunidade">Comunidade</a>
+    <a href="#interesses">Interesses Nerds</a>
+    <a href="#conquistas">Consquitas Nerds</a>
+    <a href="#registro">Registro de Usuário</a>
+   </nav>
+
+   <section id="comunidade">
+    <h2>Bem-vindo a Comunidade Nerd!</h2>
+    <p style="text-align: justify">
+        Seja bem-vindo ao Nerds Anônimos, o refúgio de quem já passou mais tempo maratonando séries e discutindo teorias de animes do que dormindo. Aqui, todo nerd é bem-vindo, seja você um fã de RPG, ficção científica, super-heróis ou aquele que acha que o melhor debate do mundo é “qual é o melhor console?”
+
+Nossa missão? Unir mentes brilhantes e completamente obcecadas por cultura geek, criando um espaço onde você pode falar sobre sua última teoria maluca, encontrar novos amigos nerds e, claro, discutir se Darth Vader derrotaria o Thanos (com ou sem as Joias do Infinito).
+
+Nerd é mais que um hobby. É um estilo de vida. Junte-se a nós e vamos dominar o mundo... ou, pelo menos, ganhar o próximo quiz de cultura pop!
+    </p>
+
+   </section>
+
+   <hr>
+
+   <section id="interesses">
+    <h2>Interesses Nerds Populares</h2>
+    <p>
+        Esses são alguns dos temas mais discutidos entre os membros da comunidade:
+    </p>
+
+    <ul>
+        <li>Filmes de Super-Heróis</li>
+        <li>Jogos de RPG</li>
+        <li>Ficção Científica</li>
+        <li>Animes e Mangás</li>
+    </ul>
+
+   </section>
+
+   <hr>
+
+   <section id="conquistas">
+
+    <h2>Conquistas Nerds</h2>
+    <p style="text-align: justify">
+        No Nerds Anônimos, todo feito épico merece reconhecimento! Seja por assistir 3 temporadas sem levantar do sofá ou criar a teoria mais absurda do multiverso, aqui você ganha pontos nerd por cada conquista. Afinal, ser nerd é quase um superpoder, né?
+    </p>
+    <table>
+        <tr>
+            <th>Conquista</th>
+            <th>Descrição</th>
+            <th>Pontos Nerd</th>
+        </tr>
+        <tr>
+            <td>Mestre das Maratonas</td>
+            <td>Assistiu 3 temporadas completas em um final de semana</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>Teórico de Multiverso</td>
+            <td>Criou uma teoria absurda e fez sentido no final</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Guardião dos Dados</td>
+            <td>Mestre de RPG em mais de 5 campanhas simultâneas</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>Otaku Supremo</td>
+            <td>Conseguiu acompanhar todos os animes da temporada</td>
+            <td>850</td>
+        </tr>
+        <tr>
+            <td>Hacker de Fim de Semana</td>
+            <td>Levou 2 horas para criar um codigo para automatizar uma tarefa que levaria 2 minutos para fazer manualmente</td>
+            <td>5000</td>
+        </tr>
+
+    </table>
+   </section>
+
+   <hr>
+
+   <section id="registro">
+    <h2>Registre-se, Padawan!</h2>
+    <p>Preencha o formulário abaixo e abrace seu lado nerd sem medo! Coloque sua capa, pegue seu D20 e vamos nessa!</p>
+
+    <form action="/registrar" method="POST">
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" required>
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+    <input type="submit" value="Registrar">
+
+    </form>
+
+   </section>
+
+   <hr>
+
+   <footer>
+
+    <p>&copy; 2024 Nerds Anônimos. Todos os direitos reservados.</p>
+    
+    </footer>
+    
+</body>
+</html>

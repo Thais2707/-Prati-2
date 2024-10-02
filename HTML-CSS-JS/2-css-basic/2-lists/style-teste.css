@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.lista-customizada li {
+    list-style-type: none;
+    color: blue;
+    background-color: rgb(181, 178, 178);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.lista-customizada li:hover{
+    color:rgb(21, 19, 23);
+    background-color: gray;
+}
+
+#ultimo-item{
+    color: green;
+    font-style: italic;
+}
+
+

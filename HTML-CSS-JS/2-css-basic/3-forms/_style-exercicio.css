@@ -1,0 +1,58 @@
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(232, 223, 223);
+    line-height: 1.6;
+}
+
+.inteiro{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.radio-group label {
+    display: inline;
+    margin-bottom: 15px;
+    font-weight: normal;
+    vertical-align: center;
+}
+
+.checkbox label{
+    display: inline;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover{
+    background-color: green;
+}

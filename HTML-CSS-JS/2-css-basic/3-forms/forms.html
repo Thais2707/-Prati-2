@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <form>
+        <h1>Cadastro de Eventos</h1>
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome" name="nome">
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" placeholder="seuemail@gmail.com">
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha">
+        <label for="confirme-senha">Confirme sua senha: </label>
+        <input type="password" id="confirme-senha" name="confirme-senha">
+
+        <label for="aniversario">Data de Nascimento: </label>
+        <input type="date" id="aniversario">
+
+        <label for="genero">Genero:</label>
+        <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outros">Outros</option>
+        </select>
+        <label for="pais">Pais:</label>
+        <select name="pais" id="pais">
+            <option value=""></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguai">Uruguai</option>
+        </select>
+
+        <fieldset>
+            <legend>Preferencias de Comunicação</legend>
+            <input type="checkbox" id="email-novidades" name="email-preferencia" value="email-preferencia">
+            <label class="inline-label" for="email-novidades">Receber notificações por e-mail</label><br>
+            <input type="checkbox" id="sms-novidades" name="sms-novidades" value="sms-novidades">
+            <label class="inline-label" for="sms-novidades">Receber notificações por SMS</label>
+        </fieldset>
+
+        <label for="foto-perfil">Foto de Perfil:</label>
+        <input type="file" name="foto-perfil" id="foto-perfil"> 
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

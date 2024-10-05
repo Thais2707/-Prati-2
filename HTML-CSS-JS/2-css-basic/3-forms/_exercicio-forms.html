@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario e-commerce</title>
+    <link rel="stylesheet" href="_style-exercicio.css">
+</head>
+<body>
+    <form>
+        <h1>Cadastro</h1>
+        <label for="name">Nome Completo: </label>
+        <input class="inteiro" type="text" name="name" id="name" required>
+        
+        <label for="email">E-mail: </label>
+        <input class="inteiro" type="email" name="email" id="email" placeholder="seuemail@gmail.com" required>
+
+        <label for="senha">Senha: </label>
+        <input class="inteiro" type="password" name="senha" id="senha"required>
+        
+        <label for="pais"> Selecione seu pais: </label>
+        <select name="pais" id="pais">
+            <option value="Brasil">Brasil</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguai">Uruguai</option>
+        </select>
+
+        <div class="radio-group">
+            <label>Genero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino" required>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="outros" name="genero" value="outros" required>
+            <label for="outros">Outros</label>
+        </div>
+        
+        <div class="checkbox">
+            <input type="checkbox" id="temrs" name="terms" required>
+            <label for="terms"> Aceito os termos de serviço</label>
+        </div>
+        <button type="submit">Cadastrar</button>
+
+     </form>
+</body>
+</html>

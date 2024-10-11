@@ -1,0 +1,14 @@
+#mensagem {
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: 1px solid;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+}

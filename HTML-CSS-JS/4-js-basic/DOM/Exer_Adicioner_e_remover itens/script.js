@@ -19,7 +19,7 @@ function adicionarItem() {
 function removerItem() {
     if (lista.children.length > 0) {
         let indice = prompt("Digite o número do item que deseja remover:");
-        let itemRemover = document.querySelector(`li:nth-child(${indice})`); // Corrigido para usar template string
+        let itemRemover = document.querySelector(`li:nth-child(${indice})`);
 
         if (itemRemover) {
             lista.removeChild(itemRemover);

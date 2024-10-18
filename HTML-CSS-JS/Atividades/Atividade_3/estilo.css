@@ -25,7 +25,6 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('Images/_669cfbfe-40f4-48f6-b5f5-2a217c5afe9c.jfif');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
@@ -45,7 +44,6 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 15px;
-    padding: 50px 20px;
 }
 
 nav ul li a {
@@ -64,7 +62,6 @@ nav ul li a:hover {
     align-items: center; 
     margin: 20px;
 }
-
 
 section {
     width: 100%; 
@@ -95,8 +92,9 @@ section h2 {
 
 .item img {
     border-radius: 30%; 
-    width: 260px; 
-    height: 290px; 
+    width: 100%; 
+    height: auto; 
+    max-width: 260px; 
     margin-right: 20px; 
 }
 
@@ -154,12 +152,17 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .content {
-        flex-direction: column;
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
 
-    section, aside {
+    .item {
         width: 100%;
-        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .items-container {
+        flex-direction: column;
     }
 }

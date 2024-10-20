@@ -1,14 +1,11 @@
-// Esperar o DOM estar completamente carregado
 document.addEventListener('DOMContentLoaded', function() {
-    // Inicializa o calendário
     $(function() {
         $("#data").datepicker({
             dateFormat: "dd/mm/yy",
-            minDate: 0 // Impede a seleção de datas passadas
+            minDate: 0 
         });
     });
 
-    // Função para validar o formulário de agendamento
     function validarFormulario() {
         const nome = document.getElementById('nome').value.trim();
         const email = document.getElementById('email').value.trim();
@@ -33,22 +30,26 @@ document.addEventListener('DOMContentLoaded', function() {
         return re.test(email);
     }
 
-    // Enviar o formulário
+    const userID = 'HUwZY5Y-2oOBSw6vC'; 
+    const serviceID = 'service_6tuofp7'; 
+    const templateID = 'template_i3gvwsd'; 
+
+    emailjs.init(userID); 
+
     document.getElementById('agendamento-form').addEventListener('submit', function(event) {
         event.preventDefault();
 
         if (!validarFormulario()) {
-            return; // Impedir o envio se a validação falhar
+            return; 
         }
 
         const nome = document.getElementById('nome').value;
         const email = document.getElementById('email').value;
         const telefone = document.getElementById('telefone').value;
         const data = document.getElementById('data').value;
-        const mensagem = document.getElementById('mensagem').value;
+        const mensagem = document.getElementById('mensagem').value || '';
 
-        // Aqui você pode integrar o envio via EmailJS
-        emailjs.send('SEU_USER_ID', 'template_id', {
+        emailjs.send(serviceID, templateID, {
             nome: nome,
             email: email,
             telefone: telefone,
@@ -62,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Erro ao enviar o agendamento. Tente novamente mais tarde.');
         });
 
-        // Limpar o formulário após o envio
         document.getElementById('agendamento-form').reset();
     });
 });
